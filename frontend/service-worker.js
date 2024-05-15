@@ -8,13 +8,14 @@ self.addEventListener('install', () => {
 
 self.addEventListener('push', function(event) {
 	console.log('Push message received.');
+	console.log({event});
 	let notificationTitle = 'Hello';
 	const notificationOptions = {
 		body: 'Thanks for sending this push msg.',
 		icon: './images/logo-192x192.png',
 		badge: './images/badge-72x72.png',
 		data: {
-			url: 'https://web.dev/push-notifications-overview/',
+			url: 'https://appclip.apple.com/id?p=network.gandalf.connect.Clip',
 		},
 	};
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Simple Push Demo</title>
+  <title>Gandalf Demo</title>
 
   <meta name="theme-color" content="#288990">
 
@@ -18,7 +18,10 @@
 </head>
 <body>
   <header class="c-header">
-    <h1 class="c-header--title">Simple Push Demo</h1>
+    <h1 class="c-header--title">
+      <img src="./images/logo-32x32.png" alt="Gandalf Logo" class="c-header--logo" />
+      Gandalf Demo
+    </h1>
     <nav>
       <ul class="c-header--links">
         <li><a href="https://github.com/gauntface/simple-push-demo">GitHub</a></li>
@@ -40,6 +43,12 @@
         <label class="c-text-input" for="push-payload">
           <input type="text" id="push-payload" class="js-payload-textfield" placeholder="&nbsp;">
           <span class="c-text-input--label">Add payload text</span>
+          <span class="c-text-input--bg"></span>
+        </label>
+
+        <label class="c-text-input" for="push-payload-url">
+          <input type="text" id="push-payload-url" class="js-payload-textfield" placeholder="&nbsp;" value="https://appclip.apple.com/id?p=network.gandalf.connect.Clip">
+          <span class="c-text-input--label">Url</span>
           <span class="c-text-input--bg"></span>
         </label>
 
