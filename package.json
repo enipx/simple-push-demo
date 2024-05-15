@@ -19,7 +19,8 @@
     "dev-backend-open": "npx cross-env PORT=8081 ACCESS_CONTROL=* npx nodemon ./server.js",
     "lint": "eslint --fix '.'",
     "test": "npm run lint && npm run ava",
-    "vercel": "npx vercel dev"
+    "vercel": "npx vercel dev",
+    "server": "npx nodemon ./server.js"
   },
   "dependencies": {
     "express": "4.19.2"
